@@ -1,0 +1,3 @@
+javac -cp .;%JADE_HOME%\lib\jade.jar Core.java Controle.java Semaforo.java Simulator.java Sensor.java GUI.java Brain.java
+
+java -cp .;%JADE_HOME%\lib\jade.jar jade.Boot -gui semaforo1:quantum.Semaforo("VERDE","road1");semaforo2:quantum.Semaforo("VERMELHO","road2");semaforo3:quantum.Semaforo("VERMELHO","road3");sensor1:quantum.Sensor;sensor2:quantum.Sensor;sensor3:quantum.Sensor;road1:quantum.Simulator;road2:quantum.Simulator;road3:quantum.Simulator;GUI:quantum.GUI;Brain:quantum.Brain
